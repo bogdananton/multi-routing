@@ -1,0 +1,39 @@
+{
+    "name": "neneax/multi-routing",
+    "description": "A simple package used for routing and dispatching intents to controllers, by using different protocols/serializations.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrei Pirjoleanu",
+            "email": "andreipirjoleanu@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Bogdan Anton",
+            "email": "contact@bogdananton.ro",
+            "role": "Developer"
+        },
+        {
+            "name": "Teodor Popa",
+            "email": "popa.teodor@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/events": "5.0.*",
+        "illuminate/routing": "5.0.*",
+        "xqddd/notifications": "0.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "*",
+        "guzzlehttp/guzzle": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "examples/basic/resources",
+            "MultiRouting\\": "src/"
+        }
+    }
+}
