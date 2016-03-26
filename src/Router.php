@@ -8,7 +8,6 @@ use MultiRouting\Adapters\Main\Adapter as MainAdapter;
 
 class Router extends \Illuminate\Routing\Router
 {
-
     /**
      * @var AdapterService
      */
@@ -101,7 +100,7 @@ class Router extends \Illuminate\Routing\Router
         return $this->adapterService
             ->getAdapterInUse()
             ->buildRoute($methods, $uri, $action)
+            ->setRouter($this)
             ->setContainer($this->container);
     }
-
 }
